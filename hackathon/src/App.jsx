@@ -6,11 +6,9 @@ function App() {
   return (
     <>
       <Routes>
-       
           <Route index element={<Pages.HomePage />} /> 
           <Route path="/pokepage" element={<Pages.PokePage />} /> 
           <Route path="/pokepage/:id" element={<Pages.PokeInfoPage />} /> 
-     
       </Routes>
     </>
   )
