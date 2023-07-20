@@ -8,7 +8,7 @@ export default function ShowGallery() {
     async function fetchPokemon() {
       const response = await fetch("https://pokeapi.co/api/v2/pokemon");
       const data = await response.json();
-      setPokemonList(data.results); // Update to store the results array
+      setPokemonList(data.results); 
     }
 
     fetchPokemon();
@@ -16,8 +16,8 @@ export default function ShowGallery() {
 
   return (
     <div>
-      {pokemonList.map((pokemon, index) => ( // Renamed the variable to avoid conflict
-        <Link to={`/${index + 1}`} key={index}> {/* Using index as key is fine since the order is static */}
+      {pokemonList.map((pokemon, index) => ( 
+        <Link to={`/pokepage/${index + 1}`} key={index}> 
           <div>
             <p>{pokemon.name}</p>
           </div>
