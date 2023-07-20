@@ -1,16 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const linkStyle = {
-    color: '#875053'
-  };
-
 const HomePage = () => {
     return (
          <main>
         <h1>Pokemon Library</h1>
-        <p>Welcome to <b>Snack Rankings</b>, the world's most famous snack-ranking site!</p>
-        <p>View our Pokemon</p>
+        <p>Welcome to the <b>Pokemon Library</b>, where you can find information on all of your favoruite Pokemon!</p>
+        <Link to="/pokepage">View our Pokemon</Link>
     </main>
     )
 };
