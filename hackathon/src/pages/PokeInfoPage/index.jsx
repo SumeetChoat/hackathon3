@@ -21,11 +21,6 @@ export default function PokeInfoPage() {
           <h2>Name: {show.name}</h2>
           <h2>Height: {show.height}</h2>
           <h2>Weight: {show.weight}</h2>
-          {show.abilities.map((show) => ( 
-          <div>
-            <li>{show.abilities}</li>
-          </div>
-      ))}
       </div>
     )
 }
