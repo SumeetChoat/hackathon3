@@ -10,8 +10,7 @@ export default function Header() {
             <header>
                 <nav>
                     <NavLink to="/" style={styles}>Home</NavLink>
-                    <NavLink to="/pokepage" style={styles}>Pokemon </NavLink>
-                    
+                    <NavLink to="/pokepage" style={styles}>Pokemon</NavLink>
                 </nav>
             </header>
             <Outlet />
